@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>The Decoder</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body> 
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        
+
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <div class="container" style="width:95%"> <h4><span style="color: #00C0C0; font-size: xx-large;font-weight: bold;">
+The Decoder               </span>
+                </h4> 
+                <form action="" method="post">
+                            <table class="table table-borderless .table-fixed">
+                                <tbody>
+                                   
+                                    <div class="row">
+
+                                        
+                                              <div class="col-sm-6">
+                                                <label for="userstring" id="userstringlbl"> <span>Your value goes here</span></label>
+                                                <textarea class="form-control" rows="10" id="userstring" name="userstring"></textarea>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="resultstring" id="resultstringlbl"> <span>Result here</span></label>
+                                                <textarea class="form-control" rows="10" id="resultstring" name="resultstring">{{.}}</textarea>
+                                            </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+
+                                            <label for="sel1">Select Your Operation                                                        
+                                            </label>
+                                            <select class="form-control" id="userselection" name="userselection">
+                                            <option>Base64 Encode</option>
+                                            <option>Base64 Decode</option>
+                                            <option>Compress and Encode (GZip/Base64)</option>
+                                            <option>Decompress and Decode (GZip/Base64)</option>
+
+                                            </select>
+                                        </div>
+                                        <div style="height: 100px;width: 25px;"></div>
+                                        <div class="col-sm-6">
+
+                                        <button type="submit" class="btn btn-primary form-control">Get Result</button>
+                                        </div>
+
+                                    </div>
+                                    
+                                   
+                                  
+                                </tbody>
+                            </table>                                                                 
+                                			                  
+                                
+                        </form>
+                        
+                    </div>
+
+            </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
