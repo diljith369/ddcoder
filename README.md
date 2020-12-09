@@ -1,25 +1,23 @@
-## AvBuster - Endpoint Security Assessment Framework .
+## ddcoder - A simple encoder and decoder . 
 
-#####  AvBuster is an EndPoint Security Assessment Framework .Helps you to create serveral binary files to assess endpoint protection / anti malware solutions by trying different techniques to bypass endpoint protections including AntiVirus .[In progress project expect bugs :)]
+#####  ddcoder is a simple encoder and decoder app that supports base64 encoding / decoding and  Compressed Encoding / Decompressed Decoding (Gzip / Base64). Originally developed for AvBuster , then decided to make it as a standalone one to save time :)
 
-## Getting Started
+## Getting Started (If you want to build from source)
 
-##### git clone https://github.com/diljith369/AvBuster.git
-##### cd AvBuster/src
+##### git clone https://github.com/diljith369/ddcoder.git
+##### cd ddcoder/src
 ### Set it up in Windows 
-#### set GOARCH=386
-#### go build avbustercli.go
-##### > avbustercli.exe
+#### go build -ldflags="-s -w" ddcoder.go
+##### > ddcoder.exe
 
 ### Set it up in Linux 
-#### go build avbustercli.go
-##### ./avbustercli
+#### go build -ldflags="-s -w" ddcoder.go
+##### ./ddcoder
 
+### You can directly download zip file, contains the binary for corresponding OS (Win/Linux).
 ### Prerequisites
 
-#### Go 1.9
-
-#### References : SET tool kit and Veil Framework.
+#### Go 
 
 ### Built With
 #### Go Lang
